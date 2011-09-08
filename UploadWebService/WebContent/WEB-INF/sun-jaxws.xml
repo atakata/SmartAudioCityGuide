@@ -3,7 +3,7 @@
   xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
   version="2.0">
   <endpoint
-      name="GravacaoUpload"
-      implementation="br.usp.audiocityguide.ws.upload.GravacaoUploadImpl"
+      name="UploadGravacao"
+      implementation="br.usp.audiocityguide.ws.upload.UploadGravacaoImpl"
       url-pattern="/upload"/>
 </endpoints>

@@ -9,9 +9,9 @@ import javax.jws.soap.SOAPBinding.Style;
 //Service Endpoint Interface
 @WebService
 @SOAPBinding(style = Style.RPC)
-public interface GravacaoUpload{
+public interface UploadGravacao{
 	
-	@WebMethod boolean gravacaoUpload(
+	@WebMethod boolean uploadGravacao(
 			@WebParam(name="arquivoBase64")String stringInBase64, 
 			@WebParam(name="latitude")String latitude, 
 			@WebParam(name="longitude")String longitude,

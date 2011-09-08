@@ -13,13 +13,13 @@ import br.usp.audiocityguide.dao.GravacaoDAO;
 import br.usp.audiocityguide.jpa.entity.Gravacao;
 import br.usp.audiocityguide.util.Arquivo;
 
-@WebService(endpointInterface = "br.usp.audiocityguide.ws.upload.GravacaoUpload")
-public class GravacaoUploadImpl implements GravacaoUpload{
+@WebService(endpointInterface = "br.usp.audiocityguide.ws.upload.UploadGravacao")
+public class UploadGravacaoImpl implements UploadGravacao{
 
-	static Logger logger = Logger.getLogger(GravacaoUploadImpl.class);
+	static Logger logger = Logger.getLogger(UploadGravacaoImpl.class);
 	
 	@Override
-	public boolean gravacaoUpload(String stringInBase64, String latitude, String longitude, String titulo, String precisao) {
+	public boolean uploadGravacao(String stringInBase64, String latitude, String longitude, String titulo, String precisao) {
 		try {
 			byte[] filecontent = Base64.decode(stringInBase64);
 			if (filecontent.length == 0) {
